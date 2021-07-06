@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+/* comfortaa and ubuntu */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 :root {
     --primary-color: #3B82F6;
     --dark-gray: #6B7280;
     --off-white: #D1D5DB;
+    --third-color: #F59E0B;
 }
 
 * {
@@ -12,168 +16,73 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    /* overflow-y: hidden; */
-}
-
-hr {
-    margin: 2rem 0rem;
-}
-
-.name {
-    /* size: large; */
-    font-family: 'Comfortaa', cursive;
-    font-weight: normal;
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
 
-/* spaces */
-
-
-/* .margin-md {
-    margin: 2rem; 
-} */
-
-
-/* containers */
+.heading {
+    font-weight: normal;
+    color: var(--third-color);
+}
 
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
+    /* margin: auto; */
 }
 
-.container-center {
+.container-centered {
     max-width: 600px;
     margin: auto;
+}
+
+.hero-welcome {
+    color: var(--primary-color);
+}
+
+
+/* input text area */
+
+.inputText {
+    height: 2rem;
+    width: 50%;
+    border-radius: 0.3rem;
+    border-style: none;
+    border: 0.5px solid black;
+    padding: 0.5rem;
+}
+
+
+/* button */
+
+.btn {
+    background-color: var(--third-color);
+    border-radius: 0.5rem;
+    color: white;
+    border-style: none;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem;
+    width: 10%;
+    text-align: center;
     justify-content: center;
-    text-align: center;
+    /* border-radius: 1px solid var(--third-color); */
 }
 
-
-/* links */
-
-.link {
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    /* margin-top: 1rem;
-    margin-bottom: 1rem; */
+.btn:hover {
+    background-color: white;
+    color: var(--third-color);
+    border: 0.5px solid var(--third-color);
 }
 
-.link-primary {
-    background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color: white;
-}
-
-.link-secondary {
-    color: var(--primary-color);
-    border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
-}
-
-
-/* lists */
-
-.list-non-bullet {
-    list-style: none;
-}
-
-.list-item-inline {
-    display: inline;
-    padding: 0rem 0.5rem;
-}
-
-
-/* navigation */
-
-.navigation {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    /* border-bottom-left-radius: 2rem; */
-    /* border-top-left-radius: 2rem; */
-}
-
-.navigation .nav-brand {
-    font-weight: bold;
-    /* font-size: 1.1rem; */
-}
-
-.navigation .nav-pills {
-    text-align: center;
-}
-
-.navigation .link {
-    color: white;
-}
-
-.navigation .link-active {
-    font-weight: bold;
-}
-
-
-/* header */
-
-.hero {
-    padding: 2rem;
-    padding-top: 5rem;
-}
-
-.hero .hero-img {
+.hero-img {
+    /* padding: 2rem;
+    padding-top: 5rem; */
     max-width: 350px;
-    display: block;
+    display: flex;
     margin: auto;
-}
-
-.hero .hero-heading {
-    text-align: center;
-    padding-top: 1rem;
-    color: var(--dark-gray);
-}
-
-.hero .hero-heading .heading-inverted {
-    color: var(--primary-color);
-}
-
-
-/* sections */
-
-.section {
-    padding: 2rem;
-}
-
-.section h1 {
-    text-align: center;
-}
-
-.ow {
-    background-color: var(--off-white);
-}
-
-
-/* footer */
-
-.footer {
-    /* background-color: var(--primary-color); */
-    padding: 2rem 1rem;
-    text-align: center;
-    color: white;
-    border-top-right-radius: 1rem;
-}
-
-.footer .footer-header {
-    font-weight: bold;
-    font-size: large;
-}
-
-.footer .link {
-    color: black;
-}
-
-.footer ul {
-    /* this is a user agent, given by chrome so we are overriding it */
-    padding-inline-start: 0px;
 }
