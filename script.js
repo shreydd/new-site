@@ -1,7 +1,7 @@
 let userQuestion;
 
 questionList = ["about", "projects", "blogs"];
-redirectList = ["about.html", "projects.html", "blogs.html"];
+redirectList = ["about.html", "projects.html", "https://factored.substack.com"];
 
 function userAsk() {
     userQuestion = document.getElementById("inputText").value;
