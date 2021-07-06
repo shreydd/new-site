@@ -1,7 +1,7 @@
 let userQuestion;
 
-questionList = ["about", "projects"];
-redirectList = ["about.html", "projects.html"];
+questionList = ["about", "projects", "blogs"];
+redirectList = ["about.html", "projects.html", "blogs.html"];
 
 function userAsk() {
     userQuestion = document.getElementById("inputText").value;
