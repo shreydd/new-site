@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
-
-/* comfortaa and ubuntu */
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 :root {
-    --primary-color: #F59E0B;
-    --dark-gray: #6B7280;
-    --off-white: #2f343a;
-    --third-color: #00B0FF;
-    --fourth-color: #3B82F6;
+    --primary-color: deepskyblue;
+    --dark-gray: #4f5155;
+    --off-white: #D1D5DB;
 }
 
 * {
@@ -17,14 +11,25 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    display: block;
-    justify-content: center;
-    text-align: center;
 }
 
-.heading {
-    font-weight: normal;
-    color: var(--third-color);
+
+/* containers */
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-contents {
+    height: 600px;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -37,58 +42,100 @@ body {
     margin-bottom: 1rem; */
 }
 
-.link:hover {
-    text-decoration: underline;
-}
-
-
-/* input text area */
-
-.inputText {
-    height: 2rem;
-    width: 50%;
-    border-radius: 0.3rem;
-    border-style: none;
-    border: 0.5px solid black;
-    padding: 0.5rem;
-}
-
-
-/* button */
-
-.btn {
-    background-color: var(--third-color);
+.link-primary {
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
-    border-style: none;
-    padding: 0.5rem 0.5rem;
-    margin: 1rem;
-    width: 10%;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* lists */
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+}
+
+
+/* navigation */
+
+.navigation {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    /* border-radius: 1rem; */
+    /* border-bottom-left-radius: 2rem; */
+    /* border-top-left-radius: 2rem; */
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    /* font-size: 1.1rem; */
+}
+
+.navigation .nav-pills {
     text-align: center;
-    justify-content: center;
-    /* border-radius: 1px solid var(--third-color); */
-    /* height: auto; */
 }
 
-.btn:hover {
-    background-color: white;
-    color: var(--third-color);
-    border: 0.1px solid var(--third-color);
-    /* height: auto; */
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-nav:hover {
+    color: var(--primary-color);
+}
+
+.navigation .link-active {
+    /* text-decoration: underline; */
+    /* font-weight: 900; */
+    color: var(--primary-color);
 }
 
 
-/* hero */
+/* section */
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.not-white {
+    background-color: black;
+    color: white;
+}
+
+
+/* header */
 
 .hero {
     padding: 2rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
+    /* display: flex; */
+    /* float: left; */
+    /* justify-content: center; */
+    /* align-items: stretch;
+    flex-direction: column; */
 }
 
 .hero .hero-img {
-    max-width: 350px;
-    display: block;
-    margin: auto;
+    width: 100%;
+    /* float: left; */
+    /* max-width: 350px; */
+    /* display: flex; */
+    /* margin: auto; */
 }
 
 .hero .hero-heading {
@@ -98,73 +145,5 @@ body {
 }
 
 .hero .hero-heading .heading-inverted {
-    color: var(--third-color);
-}
-
-
-/* container */
-
-.container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.container-center {
-    max-width: 900px;
-    margin: auto;
-}
-
-
-/* section */
-
-.section {
-    padding: 1rem;
-    border-radius: 1rem;
-    /* margin-left: 60px;
-    margin-right: 60px; */
-    max-width: 900px;
-    margin: auto;
-}
-
-.section h1 {
-    text-align: center;
-}
-
-.nw {
-    background-color: var(--third-color);
-    color: whitesmoke;
-}
-
-.section-border {
-    border: 1px solid black;
-}
-
-.text-highlight {
-    color: var(--third-color);
-}
-
-
-/* footer */
-
-.footer {
-    background-color: black;
-    padding: 2rem 1rem;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    /* border-top-right-radius: 1rem; */
-}
-
-.footer .footer-header {
-    /* font-weight: bold; */
-    font-size: large;
-}
-
-.footer .link {
-    color: white;
-}
-
-.footer ul {
-    /* this is a user agent, given by chrome so we are overriding it */
-    padding-inline-start: 0px;
+    color: var(--primary-color);
 }
