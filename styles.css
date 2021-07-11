@@ -39,7 +39,9 @@ i:nth-child(5) {
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
-    /* display: flex; */
+    justify-content: center;
+    margin: auto;
+    /* display: flexbox; */
     /* padding-bottom: 1rem; */
 }
 
@@ -52,7 +54,7 @@ i:nth-child(5) {
     margin: auto;
     text-align: center;
     justify-content: center;
-    -ms-text-size-adjust: auto;
+    /* -ms-text-size-adjust: auto; */
 }
 
 .container-mini {
@@ -107,8 +109,8 @@ border-color: var(--third-color); */
 }
 
 .big-btn-blog {
-    border: 2px solid black;
-    background-color: black;
+    border: 2px solid white;
+    background-color: white;
     color: white;
     padding: 14px 28px;
     font-size: 16px;
@@ -116,8 +118,8 @@ border-color: var(--third-color); */
 }
 
 .big-btn-blog:hover {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
 }
 
 .big-btn-resources {
@@ -186,6 +188,7 @@ border-color: var(--third-color); */
 
 .section {
     padding: 2rem;
+    margin: auto;
 }
 
 .section h1 {
@@ -214,7 +217,7 @@ color: #f7b733;
 /* header */
 
 .hero {
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 5rem;
     /* justify-content: center; */
 }
@@ -229,6 +232,7 @@ color: #f7b733;
     text-align: center;
     padding-top: 1rem;
     color: var(--dark-gray);
+    font-weight: lighter;
 }
 
 .hero .hero-heading .heading-inverted {
@@ -291,6 +295,19 @@ color: #f7b733;
     margin: auto;
     /* display: flex;
 flex-direction: column; */
+}
+
+.heading-card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* transition: 0.3s; */
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    margin: auto;
+    /* margin-top: 0px; */
+    font-weight: lighter;
+    /* font-size: medium; */
 }
 
 .card:hover {
